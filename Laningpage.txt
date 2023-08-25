@@ -1,0 +1,80 @@
+Last login: Thu Aug 24 05:58:57 on console
+imac@iMacs-iMac ~ % cd ..
+imac@iMacs-iMac /Users % cd ..
+imac@iMacs-iMac / % ls
+Applications	Volumes		etc		sbin
+Library		bin		home		tmp
+System		cores		opt		usr
+Users		dev		private		var
+imac@iMacs-iMac / % cd Applications
+imac@iMacs-iMac /Applications % ls
+Adobe Acrobat Reader DC.app	Microsoft Outlook.app
+Affinity Photo.app		Microsoft PowerPoint.app
+Audacity.app			Microsoft Word.app
+CleanMyMac X.app		Movavi editeur vidéo
+CueMix FX.app			MuseScore 3.app
+Disketch.app			OBS.app
+Final Cut Pro.app		SFR
+Firefox.app			Safari.app
+IriunWebcam.app			Toast 17 Titanium
+Logic Pro X.app			Utilities
+Logoist 3.app			Visual Studio Code.app
+MOTU Audio Setup.app		Wondershare Filmora9.app
+MOTU SMPTE Setup.app		XAMPP
+Microsoft Excel.app		ZOOM Guitar Lab.app
+imac@iMacs-iMac /Applications % cd XAMPP
+imac@iMacs-iMac XAMPP % LS
+bin		etc		logs		uninstall.app
+cgi-bin		htdocs		manager-osx.app	xamppfiles
+imac@iMacs-iMac XAMPP % cd htdocs
+imac@iMacs-iMac htdocs % ls
+Cours Udemy				HTML-Studi
+Cours de PHP-Pierre-Giraud		Réalisation des projets
+Cours de PHP-conception d'une page web	applications.html
+Cours-Studi-actual			bootstrap-5.0.2-dist
+Cuaderno-de-ejercicios-y-practicas-PHP	dashboard
+imac@iMacs-iMac htdocs % cd Cours-Studi-actual
+imac@iMacs-iMac Cours-Studi-actual % ls
+1-STUDI-HTML				6-GIT-GITHUB 
+2-STUDI-CSS				6b-exercices-git
+3-STUDI-PHP				Exercice media queries
+4-Le référencement des sites web	Font Awesome CDN embed code.docx
+5-LES BASES DE DONNEES			Réalisation des projets
+imac@iMacs-iMac Cours-Studi-actual % cd 6b-exercices-git
+imac@iMacs-iMac 6b-exercices-git % mkdir landingpage
+imac@iMacs-iMac 6b-exercices-git % ls
+landingpage	tuto-git
+imac@iMacs-iMac 6b-exercices-git % cd landingpage
+imac@iMacs-iMac landingpage % git init
+Initialized empty Git repository in /Applications/XAMPP/xamppfiles/htdocs/Cours-Studi-actual/6b-exercices-git/landingpage/.git/
+imac@iMacs-iMac landingpage % git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+imac@iMacs-iMac landingpage % touch index.html
+imac@iMacs-iMac landingpage % ls
+index.html
+imac@iMacs-iMac landingpage % git add index.html
+imac@iMacs-iMac landingpage % git commit -m"init-projet"
+[master (root-commit) fc6ecdd] init-projet
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+imac@iMacs-iMac landingpage % git add index.html
+imac@iMacs-iMac landingpage % git commit -m"changement de couleur du h1"
+[master 5cf97e4] changement de couleur du h1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+imac@iMacs-iMac landingpage % git log
+commit 5cf97e49a008b190cda94ab34f8534a6ee188581 (HEAD -> master)
+Author: Francisco Arenas <panchoarenas@hotmail.fr>
+Date:   Thu Aug 24 06:32:29 2023 +0200
+
+    changement de couleur du h1
+
+commit fc6ecddbf933903cf0cb705f2e9eb7e464e3e031
+Author: Francisco Arenas <panchoarenas@hotmail.fr>
+Date:   Thu Aug 24 06:29:23 2023 +0200
+
+    init-projet
+imac@iMacs-iMac landingpage % 
